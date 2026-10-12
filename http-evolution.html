@@ -7,11 +7,13 @@
 </head>
 
 <body>
+
+  <!-- Page Header -->
   <header>
     <h1>HTTP Evolution</h1>
   </header>
 
-  <!-- ⭐ ADDED: SAME NAVIGATION BAR AS HOME -->
+  <!-- Navigation Menu -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -23,50 +25,39 @@
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <main>
     <section>
       <h2>HTTP/0.9</h2>
-      <p>
-        HTTP/0.9 was the first version. It only supported the GET method and
-        could return simple HTML pages. It was very basic.
-      </p>
+      <p>HTTP/0.9 was the first version. It only supported the GET method and returned simple HTML pages.</p>
     </section>
 
     <section>
       <h2>HTTP/1.0</h2>
-      <p>
-        HTTP/1.0 added status codes and headers. It allowed more methods,
-        but the connection closed after each request, which made it slower.
-      </p>
+      <p>HTTP/1.0 added status codes and headers. It allowed more methods but closed the connection after each request.</p>
     </section>
 
     <section>
       <h2>HTTP/1.1</h2>
-      <p>
-        HTTP/1.1 improved speed by keeping the connection open. It also added
-        better caching and made host headers required.
-      </p>
+      <p>HTTP/1.1 improved speed with persistent connections, better caching, and required host headers.</p>
     </section>
 
     <section>
       <h2>HTTP/2</h2>
-      <p>
-        HTTP/2 is faster because it uses multiplexing, header compression,
-        and binary framing. This helps websites load quicker.
-      </p>
+      <p>HTTP/2 uses multiplexing, header compression, and binary framing to improve performance.</p>
     </section>
 
     <section>
       <h2>HTTP/3 and QUIC</h2>
-      <p>
-        HTTP/3 uses QUIC instead of TCP. This reduces delays and makes
-        connections more reliable, especially on modern networks.
-      </p>
+      <p>HTTP/3 uses QUIC instead of TCP, reducing delays and improving reliability on modern networks.</p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer id="main-footer">
     <p>This is a class project for IT 3203.</p>
+    <p><a href="https://ksuweb.github.io/IT3203/" target="_blank">IT 3203 Class Website</a></p>
   </footer>
+
 </body>
 </html>
