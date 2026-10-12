@@ -1,60 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Key Concepts</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Key Concepts in HTTP</h1>
-  </header>
+<main class="concepts-grid">
+  <section>
+    <h2>HTTP Semantics</h2>
+    <p>
+      HTTP semantics explain how requests and responses should look and how
+      they are understood by browsers and servers.
+    </p>
+  </section>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="http-basics.html">HTTP Basics</a></li>
-      <li><a href="http-evolution.html">HTTP Evolution</a></li>
-      <li><a href="key-concepts.html">Key Concepts</a></li>
-      <li><a href="references.html">References</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+  <section>
+    <h2>Statelessness</h2>
+    <p>
+      HTTP is stateless, which means it does not remember past requests.
+      Each request is treated as new.
+    </p>
+  </section>
 
-  <main class="concepts-grid">
-    <section>
-      <h2>HTTP Semantics</h2>
-      <p>Defines how requests and responses are structured and interpreted.</p>
-    </section>
+  <section>
+    <h2>Methods</h2>
+    <p>
+      HTTP methods tell the server what action to take. Common methods are:
+      GET, POST, PUT, and DELETE.
+    </p>
+  </section>
 
-    <section>
-      <h2>Statelessness</h2>
-      <p>Each HTTP request is independent; servers do not store client state.</p>
-    </section>
+  <section>
+    <h2>Status Codes</h2>
+    <p>
+      Status codes show the result of a request. For example:
+      200 means success, 404 means not found, and 500 means server error.
+    </p>
+  </section>
 
-    <section>
-      <h2>Methods</h2>
-      <p>Actions clients request: GET, POST, PUT, PATCH, DELETE.</p>
-    </section>
+  <section>
+    <h2>HTTPS / TLS</h2>
+    <p>
+      HTTPS is the secure version of HTTP. It uses TLS to protect data
+      so information cannot be read by others.
+    </p>
+  </section>
 
-    <section>
-      <h2>Status Codes</h2>
-      <p>Indicate the result of a request: 2xx success, 4xx client error, 5xx server error.</p>
-    </section>
-
-    <section>
-      <h2>HTTPS / TLS</h2>
-      <p>Provides encryption, authentication, and integrity for HTTP communication.</p>
-    </section>
-
-    <section>
-      <h2>Caching</h2>
-      <p>Improves performance by storing responses for reuse.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>This is a class project for IT 3203.</p>
-  </footer>
-</body>
-</html>
+  <section>
+    <h2>Caching</h2>
+    <p>
+      Caching saves copies of files so websites load faster the next time
+      you visit them.
+    </p>
+  </section>
+</main>

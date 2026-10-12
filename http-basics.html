@@ -1,73 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>HTTP Basics</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>HTTP Basics</h1>
-  </header>
+<main>
+  <section>
+    <h2>What Is HTTP?</h2>
+    <p>
+      HTTP is how a web browser talks to a server. 
+      The browser sends a request, and the server sends a response.
+      This is how websites load information for users.
+    </p>
+  </section>
 
-  <nav>
+  <section>
+    <h2>How HTTP Works</h2>
+    <p>
+      When you open a website, your browser sends an HTTP request.
+      The server receives the request, finds the right information,
+      and sends back an HTTP response.
+    </p>
+  </section>
+
+  <section>
+    <h2>Request Methods</h2>
+    <table>
+      <tr><th>Method</th><th>Description</th></tr>
+      <tr><td>GET</td><td>Get information from the server.</td></tr>
+      <tr><td>POST</td><td>Send information to the server.</td></tr>
+      <tr><td>PUT</td><td>Update a resource.</td></tr>
+      <tr><td>DELETE</td><td>Remove a resource.</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Status Codes</h2>
     <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="http-basics.html">HTTP Basics</a></li>
-      <li><a href="http-evolution.html">HTTP Evolution</a></li>
-      <li><a href="key-concepts.html">Key Concepts</a></li>
-      <li><a href="references.html">References</a></li>
-      <li><a href="about.html">About</a></li>
+      <li>200 OK – The request was successful.</li>
+      <li>404 Not Found – The page does not exist.</li>
+      <li>500 Server Error – Something went wrong on the server.</li>
     </ul>
-  </nav>
-
-  <main>
-    <section>
-      <h2>What Is HTTP?</h2>
-      <p>
-        HTTP is an application-level protocol used for communication between software systems.
-        A browser or application acts as a client and sends an HTTP request. A web server or
-        service processes the request and returns an HTTP response.
-      </p>
-    </section>
-
-    <section>
-      <h2>How HTTP Works</h2>
-      <ol>
-        <li>The client identifies the target resource.</li>
-        <li>The client sends an HTTP request to the server.</li>
-        <li>The request may pass through proxies or caches.</li>
-        <li>The origin server processes the request.</li>
-        <li>The server sends back an HTTP response.</li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Request Methods</h2>
-      <table>
-        <tr><th>Method</th><th>Description</th></tr>
-        <tr><td>GET</td><td>Retrieve a resource</td></tr>
-        <tr><td>POST</td><td>Submit data</td></tr>
-        <tr><td>PUT</td><td>Replace a resource</td></tr>
-        <tr><td>PATCH</td><td>Modify a resource</td></tr>
-        <tr><td>DELETE</td><td>Remove a resource</td></tr>
-      </table>
-    </section>
-
-    <section>
-      <h2>Status Codes</h2>
-      <ul>
-        <li>1xx — informational</li>
-        <li>2xx — success</li>
-        <li>3xx — redirection</li>
-        <li>4xx — client errors</li>
-        <li>5xx — server errors</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>This is a class project for IT 3203.</p>
-  </footer>
-</body>
-</html>
+  </section>
+</main>
