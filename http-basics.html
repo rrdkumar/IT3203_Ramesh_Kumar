@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>HTTP Basics</title>
+  <title>HTTP Evolution</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+  <!-- Page Header -->
   <header>
-    <h1>HTTP Basics</h1>
+    <h1>HTTP Evolution</h1>
   </header>
 
-  <!-- ⭐ ADDED: SAME NAVIGATION BAR AS HOME -->
+  <!-- Navigation Menu -->
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -23,48 +24,29 @@
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <main>
     <section>
-      <h2>What Is HTTP?</h2>
-      <p>
-        HTTP is how a web browser talks to a server. 
-        The browser sends a request, and the server sends a response.
-        This is how websites load information for users.
-      </p>
+      <h2>Early Versions of HTTP</h2>
+      <p>HTTP/0.9 was the first version of HTTP. It only supported simple GET requests and returned HTML only.</p>
     </section>
 
     <section>
-      <h2>How HTTP Works</h2>
-      <p>
-        When you open a website, your browser sends an HTTP request.
-        The server receives the request, finds the right information,
-        and sends back an HTTP response.
-      </p>
+      <h2>HTTP/1.0 and HTTP/1.1</h2>
+      <p>HTTP/1.0 introduced headers and status codes. HTTP/1.1 added persistent connections, caching, and more improvements.</p>
     </section>
 
     <section>
-      <h2>Request Methods</h2>
-      <table>
-        <tr><th>Method</th><th>Description</th></tr>
-        <tr><td>GET</td><td>Get information from the server.</td></tr>
-        <tr><td>POST</td><td>Send information to the server.</td></tr>
-        <tr><td>PUT</td><td>Update a resource.</td></tr>
-        <tr><td>DELETE</td><td>Remove a resource.</td></tr>
-      </table>
-    </section>
-
-    <section>
-      <h2>Status Codes</h2>
-      <ul>
-        <li>200 OK – The request was successful.</li>
-        <li>404 Not Found – The page does not exist.</li>
-        <li>500 Server Error – Something went wrong on the server.</li>
-      </ul>
+      <h2>Modern HTTP: HTTP/2 and HTTP/3</h2>
+      <p>HTTP/2 uses multiplexing and binary framing for faster performance. HTTP/3 uses QUIC protocol to reduce latency and improve reliability.</p>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer id="main-footer">
     <p>This is a class project for IT 3203.</p>
+    <p><a href="https://ksuweb.github.io/IT3203/" target="_blank">IT 3203 Class Website</a></p>
   </footer>
+
 </body>
 </html>
