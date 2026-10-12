@@ -1,41 +1,72 @@
-<main>
-  <section>
-    <h2>HTTP/0.9</h2>
-    <p>
-      HTTP/0.9 was the first version. It only supported the GET method and
-      could return simple HTML pages. It was very basic.
-    </p>
-  </section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTTP Evolution</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <section>
-    <h2>HTTP/1.0</h2>
-    <p>
-      HTTP/1.0 added status codes and headers. It allowed more methods,
-      but the connection closed after each request, which made it slower.
-    </p>
-  </section>
+<body>
+  <header>
+    <h1>HTTP Evolution</h1>
+  </header>
 
-  <section>
-    <h2>HTTP/1.1</h2>
-    <p>
-      HTTP/1.1 improved speed by keeping the connection open. It also added
-      better caching and made host headers required.
-    </p>
-  </section>
+  <!-- ⭐ ADDED: SAME NAVIGATION BAR AS HOME -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="http-basics.html">HTTP Basics</a></li>
+      <li><a href="http-evolution.html">HTTP Evolution</a></li>
+      <li><a href="key-concepts.html">Key Concepts</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
 
-  <section>
-    <h2>HTTP/2</h2>
-    <p>
-      HTTP/2 is faster because it uses multiplexing, header compression,
-      and binary framing. This helps websites load quicker.
-    </p>
-  </section>
+  <main>
+    <section>
+      <h2>HTTP/0.9</h2>
+      <p>
+        HTTP/0.9 was the first version. It only supported the GET method and
+        could return simple HTML pages. It was very basic.
+      </p>
+    </section>
 
-  <section>
-    <h2>HTTP/3 and QUIC</h2>
-    <p>
-      HTTP/3 uses QUIC instead of TCP. This reduces delays and makes
-      connections more reliable, especially on modern networks.
-    </p>
-  </section>
-</main>
+    <section>
+      <h2>HTTP/1.0</h2>
+      <p>
+        HTTP/1.0 added status codes and headers. It allowed more methods,
+        but the connection closed after each request, which made it slower.
+      </p>
+    </section>
+
+    <section>
+      <h2>HTTP/1.1</h2>
+      <p>
+        HTTP/1.1 improved speed by keeping the connection open. It also added
+        better caching and made host headers required.
+      </p>
+    </section>
+
+    <section>
+      <h2>HTTP/2</h2>
+      <p>
+        HTTP/2 is faster because it uses multiplexing, header compression,
+        and binary framing. This helps websites load quicker.
+      </p>
+    </section>
+
+    <section>
+      <h2>HTTP/3 and QUIC</h2>
+      <p>
+        HTTP/3 uses QUIC instead of TCP. This reduces delays and makes
+        connections more reliable, especially on modern networks.
+      </p>
+    </section>
+  </main>
+
+  <footer id="main-footer">
+    <p>This is a class project for IT 3203.</p>
+  </footer>
+</body>
+</html>
