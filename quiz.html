@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTTP Self-Assessment Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="quiz.js" defer></script>
+</head>
+<body>
+  <!-- Shared page header and navigation, consistent with the rest of the project. -->
+  <header>
+    <h1>HTTP Self-Assessment Quiz</h1>
+    <p>Test your understanding of HTTP and its evolution.</p>
+  </header>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="http-basics.html">HTTP Basics</a></li>
+      <li><a href="http-evolution.html">HTTP Evolution</a></li>
+      <li><a href="key-concepts.html">Key Concepts</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="quiz.html" aria-current="page">Quiz</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section>
+      <h2>Instructions</h2>
+      <p class="quiz-intro">Answer all ten questions based on the information in the HTTP Basics, HTTP Evolution, and Key Concepts pages. You have 10 minutes. The quiz is worth 10 points, with one point per question. A score of 7/10 (70%) is a passing score.</p>
+      <div class="quiz-status" aria-live="polite">
+        <span>Time remaining: <span id="time-remaining">10:00</span></span>
+        <span>Questions: 10</span>
+      </div>
+    </section>
+
+    <!-- The form groups all ten questions so JavaScript can score one submission. -->
+    <form id="http-quiz">
+      <fieldset class="question-card">
+        <legend>Question 1 — Fill in the blank (1 point)</legend>
+        <p>HTTP stands for Hypertext ____ Protocol.</p>
+        <label for="q1" class="visually-hidden">Answer to question 1</label>
+        <input type="text" id="q1" name="q1" autocomplete="off">
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 2 — Fill in the blank (1 point)</legend>
+        <p>HTTPS adds encryption to help protect communication between a browser and a ____.</p>
+        <label for="q2" class="visually-hidden">Answer to question 2</label>
+        <input type="text" id="q2" name="q2" autocomplete="off">
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 3 — Multiple choice (1 point)</legend>
+        <p>What is the main purpose of HTTP?</p>
+        <label><input type="radio" name="q3" value="a"> To style the appearance of a web page</label>
+        <label><input type="radio" name="q3" value="b"> To transfer web resources between clients and servers</label>
+        <label><input type="radio" name="q3" value="c"> To store files permanently on a computer</label>
+        <label><input type="radio" name="q3" value="d"> To create database tables</label>
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 4 — Multiple choice (1 point)</legend>
+        <p>In a typical web exchange, which sends a request first?</p>
+        <label><input type="radio" name="q4" value="a"> The server</label>
+        <label><input type="radio" name="q4" value="b"> The client, such as a browser</label>
+        <label><input type="radio" name="q4" value="c"> The HTML validator</label>
+        <label><input type="radio" name="q4" value="d"> The CSS file</label>
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 5 — Multiple choice (1 point)</legend>
+        <p>What does the HTTP status code 404 commonly mean?</p>
+        <label><input type="radio" name="q5" value="a"> The request succeeded</label>
+        <label><input type="radio" name="q5" value="b"> The server is permanently shut down</label>
+        <label><input type="radio" name="q5" value="c"> The requested resource was not found</label>
+        <label><input type="radio" name="q5" value="d"> The connection is encrypted</label>
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 6 — Select all that apply (1 point)</legend>
+        <p>Which of these are HTTP request methods? Select all correct answers.</p>
+        <label><input type="checkbox" name="q6" value="get"> GET</label>
+        <label><input type="checkbox" name="q6" value="post"> POST</label>
+        <label><input type="checkbox" name="q6" value="css"> CSS</label>
+        <label><input type="checkbox" name="q6" value="delete"> DELETE</label>
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 7 — True or false (1 point)</legend>
+        <p>HTTP headers can carry additional information about a request or response.</p>
+        <label><input type="radio" name="q7" value="true"> True</label>
+        <label><input type="radio" name="q7" value="false"> False</label>
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 8 — True or false (1 point)</legend>
+        <p>HTTP/2 introduced features such as multiplexing and binary framing.</p>
+        <label><input type="radio" name="q8" value="true"> True</label>
+        <label><input type="radio" name="q8" value="false"> False</label>
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 9 — Multiple choice (1 point)</legend>
+        <p>What is one common purpose of HTTP caching?</p>
+        <label><input type="radio" name="q9" value="a"> To keep a copy of a resource so it may be reused and loaded faster</label>
+        <label><input type="radio" name="q9" value="b"> To turn HTML into JavaScript</label>
+        <label><input type="radio" name="q9" value="c"> To remove all status codes</label>
+        <label><input type="radio" name="q9" value="d"> To replace the web server</label>
+      </fieldset>
+
+      <fieldset class="question-card">
+        <legend>Question 10 — Fill in the blank (1 point)</legend>
+        <p>HTTP/3 uses the QUIC transport protocol instead of ____.</p>
+        <label for="q10" class="visually-hidden">Answer to question 10</label>
+        <input type="text" id="q10" name="q10" autocomplete="off">
+      </fieldset>
+
+      <button class="quiz-button" id="submit-quiz" type="submit">Submit Quiz</button>
+      <button class="quiz-button" id="reset-quiz" type="reset">Retake / Reset Quiz</button>
+    </form>
+
+    <!-- Results are filled in after submission; aria-live helps screen-reader users. -->
+    <section id="results" aria-live="polite" hidden>
+      <h2 id="result-heading">Quiz Results</h2>
+      <p id="overall-result"></p>
+      <p id="total-score"></p>
+      <p id="time-spent"></p>
+      <div id="answer-review"></div>
+    </section>
+  </main>
+  <footer id="main-footer">
+    <p>This is a class project for IT 3203.</p>
+    <p><a href="https://ksuweb.github.io/IT3203/" target="_blank" rel="noopener noreferrer">IT 3203 Class Website</a></p>
+  </footer>
+</body>
+</html>
