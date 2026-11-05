@@ -33,15 +33,31 @@ nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  display: inline-block;
+  padding: 8px 4px;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
+  color: #fff2b3;
   text-decoration: underline;
 }
 
 /* Main Content */
 main {
+  max-width: 1000px;
+  margin: 0 auto;
   padding: 20px;
+  line-height: 1.6;
+}
+
+main section {
+  background: #ffffff;
+  border: 1px solid #d8e1eb;
+  border-radius: 8px;
+  padding: 18px 22px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 40, 80, 0.06);
 }
 
 /* Tables */
@@ -51,16 +67,19 @@ table {
   margin-top: 20px;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #ccc;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
 }
 
-/* Footer (general footer styling) */
+/* Footer */
 footer {
   background-color: #004c99;
   color: white;
@@ -78,39 +97,28 @@ footer {
   margin-top: 30px;
 }
 
-
-/* Milestone 2 improvements: readable content and responsive layout. */
-main {
-  max-width: 1000px;
-  margin: 0 auto;
-  line-height: 1.6;
-}
-
-main section {
-  background: #ffffff;
-  border: 1px solid #d8e1eb;
-  border-radius: 8px;
-  padding: 18px 22px;
-  margin: 0 0 20px;
-  box-shadow: 0 2px 5px rgba(0, 40, 80, 0.06);
-}
-
-nav a {
-  display: inline-block;
-  padding: 8px 4px;
-}
-
-nav a:focus, nav a:hover {
-  color: #fff2b3;
+/* Footer Link Fix */
+#main-footer a,
+#main-footer a:link,
+#main-footer a:visited {
+  color: white !important;
   text-decoration: underline;
 }
 
-a { overflow-wrap: anywhere; }
+#main-footer a:hover {
+  color: yellow !important;
+}
 
-/* Quiz layout and form controls */
+/* Utility */
+a {
+  overflow-wrap: anywhere;
+}
+
+/* Quiz Layout */
 .quiz-intro {
   color: #34495e;
 }
+
 .quiz-status {
   display: flex;
   flex-wrap: wrap;
@@ -123,6 +131,7 @@ a { overflow-wrap: anywhere; }
   margin-bottom: 18px;
   font-weight: bold;
 }
+
 .question-card {
   background: #fff;
   border: 1px solid #ccd8e5;
@@ -130,15 +139,19 @@ a { overflow-wrap: anywhere; }
   padding: 16px 18px;
   margin: 16px 0;
 }
-.question-card legend, .question-title {
+
+.question-card legend,
+.question-title {
   font-weight: bold;
   color: #123b62;
 }
+
 .question-card label {
   display: block;
   margin: 8px 0;
   cursor: pointer;
 }
+
 .question-card input[type="text"] {
   width: min(100%, 420px);
   box-sizing: border-box;
@@ -148,10 +161,12 @@ a { overflow-wrap: anywhere; }
   border-radius: 5px;
   font: inherit;
 }
+
 .question-card input:focus {
   outline: 2px solid #80b9ff;
   outline-offset: 2px;
 }
+
 .quiz-button {
   border: 0;
   border-radius: 6px;
@@ -160,9 +175,21 @@ a { overflow-wrap: anywhere; }
   font: bold 1rem Arial, sans-serif;
   cursor: pointer;
 }
-#submit-quiz { background: #0066cc; color: white; }
-#reset-quiz { background: #e1e7ee; color: #203040; }
-.quiz-button:hover { filter: brightness(0.93); }
+
+#submit-quiz {
+  background: #0066cc;
+  color: white;
+}
+
+#reset-quiz {
+  background: #e1e7ee;
+  color: #203040;
+}
+
+.quiz-button:hover {
+  filter: brightness(0.93);
+}
+
 #results {
   border: 2px solid #9aaec2;
   border-radius: 8px;
@@ -170,16 +197,59 @@ a { overflow-wrap: anywhere; }
   margin: 20px 0;
   background: #f7fbff;
 }
-#results.pass { border-color: #218838; background: #effaf1; }
-#results.fail { border-color: #bd3039; background: #fff1f1; }
-.result-item { border-top: 1px solid #d5dce4; padding: 10px 0; }
-.correct { color: #176b2c; font-weight: bold; }
-.incorrect { color: #a51d2d; font-weight: bold; }
-.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+#results.pass {
+  border-color: #218838;
+  background: #effaf1;
+}
+
+#results.fail {
+  border-color: #bd3039;
+  background: #fff1f1;
+}
+
+.result-item {
+  border-top: 1px solid #d5dce4;
+  padding: 10px 0;
+}
+
+.correct {
+  color: #176b2c;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: #a51d2d;
+  font-weight: bold;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
 
 @media (max-width: 720px) {
-  nav ul { flex-wrap: wrap; gap: 8px 14px; }
-  header { padding: 16px 10px; }
-  main { padding: 12px; }
-  main section { padding: 14px; }
+  nav ul {
+    flex-wrap: wrap;
+    gap: 8px 14px;
+  }
+
+  header {
+    padding: 16px 10px;
+  }
+
+  main {
+    padding: 12px;
+  }
+
+  main section {
+    padding: 14px;
+  }
 }
