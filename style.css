@@ -1,4 +1,25 @@
-/* General Page Styling */
+/* ==========================================================
+   IT3203 Project
+   style.css
+
+   Purpose:
+   This stylesheet provides a consistent design for all
+   website pages and implements responsive web design
+   techniques for desktop, tablet, and mobile devices.
+
+   Responsive Design Features:
+   - Flexible navigation menu
+   - Responsive images
+   - Responsive tables
+   - Mobile-friendly quiz form
+   - Tablet layout media query
+   - Mobile phone layout media query
+========================================================== */
+
+/* ==========================================================
+   General Page Styling
+========================================================== */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,7 +28,10 @@ body {
   color: #333;
 }
 
-/* Header */
+/* ==========================================================
+   Header
+========================================================== */
+
 header {
   background-color: #004c99;
   color: white;
@@ -15,7 +39,10 @@ header {
   text-align: center;
 }
 
-/* Navigation Menu */
+/* ==========================================================
+   Navigation Menu
+========================================================== */
+
 nav {
   background-color: #0066cc;
 }
@@ -43,7 +70,10 @@ nav a:focus {
   text-decoration: underline;
 }
 
-/* Main Content */
+/* ==========================================================
+   Main Content Area
+========================================================== */
+
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -60,7 +90,24 @@ main section {
   box-shadow: 0 2px 5px rgba(0, 40, 80, 0.06);
 }
 
-/* Tables */
+/* ==========================================================
+   Responsive Images
+
+   Images automatically scale to fit smaller screens.
+========================================================== */
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ==========================================================
+   Tables
+
+   Standard table styling
+========================================================== */
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -79,7 +126,27 @@ td {
   text-align: left;
 }
 
-/* Footer */
+/* ==========================================================
+   Responsive Table Container
+
+   Add this class around large tables:
+
+   <div class="table-container">
+       <table>...</table>
+   </div>
+
+   This allows horizontal scrolling on phones.
+========================================================== */
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* ==========================================================
+   Footer
+========================================================== */
+
 footer {
   background-color: #004c99;
   color: white;
@@ -88,7 +155,10 @@ footer {
   margin-top: 20px;
 }
 
-/* REQUIRED ID SELECTOR FOR MILESTONE 1 */
+/* ==========================================================
+   Required ID Selector (Milestone Requirement)
+========================================================== */
+
 #main-footer {
   background-color: #004d66;
   color: white;
@@ -97,7 +167,6 @@ footer {
   margin-top: 30px;
 }
 
-/* Footer Link Fix */
 #main-footer a,
 #main-footer a:link,
 #main-footer a:visited {
@@ -109,12 +178,18 @@ footer {
   color: yellow !important;
 }
 
-/* Utility */
+/* ==========================================================
+   Utility Styles
+========================================================== */
+
 a {
   overflow-wrap: anywhere;
 }
 
-/* Quiz Layout */
+/* ==========================================================
+   Quiz Page Styling
+========================================================== */
+
 .quiz-intro {
   color: #34495e;
 }
@@ -167,6 +242,10 @@ a {
   outline-offset: 2px;
 }
 
+/* ==========================================================
+   Quiz Buttons
+========================================================== */
+
 .quiz-button {
   border: 0;
   border-radius: 6px;
@@ -189,6 +268,10 @@ a {
 .quiz-button:hover {
   filter: brightness(0.93);
 }
+
+/* ==========================================================
+   Quiz Results
+========================================================== */
 
 #results {
   border: 2px solid #9aaec2;
@@ -223,6 +306,13 @@ a {
   font-weight: bold;
 }
 
+/* ==========================================================
+   Accessibility
+
+   Keeps text available to screen readers while hidden
+   visually on the page.
+========================================================== */
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -235,7 +325,14 @@ a {
   border: 0;
 }
 
-@media (max-width: 720px) {
+/* ==========================================================
+   Responsive Design - Tablet Layout
+
+   Applies to tablets and smaller screens.
+========================================================== */
+
+@media (max-width: 768px) {
+
   nav ul {
     flex-wrap: wrap;
     gap: 8px 14px;
@@ -251,5 +348,65 @@ a {
 
   main section {
     padding: 14px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}
+
+/* ==========================================================
+   Responsive Design - Mobile Phone Layout
+
+   Applies to smartphones and very small screens.
+========================================================== */
+
+@media (max-width: 480px) {
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  header {
+    padding: 12px 8px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  main {
+    padding: 8px;
+  }
+
+  main section {
+    padding: 12px;
+  }
+
+  .quiz-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .question-card input[type="text"] {
+    width: 100%;
+  }
+
+  table {
+    font-size: 0.9rem;
   }
 }

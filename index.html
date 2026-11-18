@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
+    <!-- Character Encoding -->
     <meta charset="UTF-8">
+
+    <!-- Required for Responsive and Mobile Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
     <title>Home - IT 3203 Project</title>
+
+    <!-- External CSS File -->
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <!-- Page Header -->
+    <!-- =====================================================
+         Page Header
+    ====================================================== -->
     <header>
         <h1>Welcome to My IT 3203 Project</h1>
     </header>
 
-    <!-- Navigation Menu -->
+    <!-- =====================================================
+         Navigation Menu
+         Used on all pages for consistent navigation
+    ====================================================== -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -25,19 +42,30 @@
         </ul>
     </nav>
 
-    <!-- Main Content -->
+    <!-- =====================================================
+         Main Content Area
+    ====================================================== -->
     <main>
 
+        <!-- Introduction Section -->
         <section>
+
             <h2>Introduction</h2>
+
             <p>
-                This website is my class project for IT 3203 – Web Development.
-                It covers HTTP basics, evolution, key concepts, references, and a self-assessment quiz.
+                This website is my IT 3203 Web Development project.
+                The website provides information about HTTP, including
+                HTTP basics, HTTP evolution, key concepts, references,
+                and a self-assessment quiz.
             </p>
+
         </section>
 
+        <!-- Key Terms Section -->
         <section>
+
             <h2>Key Terms</h2>
+
             <ul>
                 <li>HTTP</li>
                 <li>Request</li>
@@ -45,70 +73,105 @@
                 <li>Client</li>
                 <li>Server</li>
             </ul>
+
         </section>
 
+        <!-- Table of Contents Section -->
         <section>
+
             <h2>Table of Contents</h2>
+
             <ul>
                 <li><a href="http-basics.html">HTTP Basics</a></li>
                 <li><a href="http-evolution.html">HTTP Evolution</a></li>
                 <li><a href="key-concepts.html">Key Concepts</a></li>
                 <li><a href="references.html">References</a></li>
                 <li><a href="quiz.html">Self-Assessment Quiz</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="about.html">About the Author</a></li>
             </ul>
+
         </section>
 
-        <!-- Required Image -->
+        <!-- =====================================================
+             Image Section
+             Demonstrates use of images in web design
+             The image scales automatically on smaller screens
+        ====================================================== -->
         <section>
+
             <h2>HTTP Diagram</h2>
-            <img src="http-diagram.jpg" alt="HTTP Diagram" width="400">
+
+            <img
+                src="http-diagram.jpg"
+                alt="Diagram showing how HTTP communication works between a client and server">
+
         </section>
 
-        <!-- Required Table -->
+        <!-- =====================================================
+             Table Section
+             Demonstrates use of HTML tables
+             Wrapped in a responsive container for mobile devices
+        ====================================================== -->
         <section>
+
             <h2>HTTP Versions Comparison</h2>
 
-            <table>
-                <tr>
-                    <th>Version</th>
-                    <th>Description</th>
-                </tr>
+            <div class="table-container">
 
-                <tr>
-                    <td>HTTP/1.0</td>
-                    <td>Basic web communication</td>
-                </tr>
+                <table>
 
-                <tr>
-                    <td>HTTP/1.1</td>
-                    <td>Persistent connections</td>
-                </tr>
+                    <tr>
+                        <th>Version</th>
+                        <th>Description</th>
+                    </tr>
 
-                <tr>
-                    <td>HTTP/2</td>
-                    <td>Improved speed and performance</td>
-                </tr>
+                    <tr>
+                        <td>HTTP/1.0</td>
+                        <td>Basic web communication</td>
+                    </tr>
 
-                <tr>
-                    <td>HTTP/3</td>
-                    <td>Uses QUIC for faster communication</td>
-                </tr>
-            </table>
+                    <tr>
+                        <td>HTTP/1.1</td>
+                        <td>Persistent connections</td>
+                    </tr>
+
+                    <tr>
+                        <td>HTTP/2</td>
+                        <td>Improved speed and performance</td>
+                    </tr>
+
+                    <tr>
+                        <td>HTTP/3</td>
+                        <td>Uses QUIC protocol for faster communication</td>
+                    </tr>
+
+                </table>
+
+            </div>
 
         </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- =====================================================
+         Footer
+    ====================================================== -->
     <footer id="main-footer">
-        <p>This is a class project for IT 3203.</p>
+
         <p>
-            <a href="https://ksuweb.github.io/IT3203/" target="_blank">
+            This is a class project for IT 3203.
+        </p>
+
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/"
+               target="_blank"
+               rel="noopener noreferrer">
                 IT 3203 Class Website
             </a>
         </p>
+
     </footer>
 
 </body>
+
 </html>

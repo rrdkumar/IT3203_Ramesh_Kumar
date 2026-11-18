@@ -1,64 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>HTTP Evolution</title>
-  <link rel="stylesheet" href="style.css">
+
+    <!-- Character Encoding -->
+    <meta charset="UTF-8">
+
+    <!-- Required for Responsive and Mobile Design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page Title -->
+    <title>HTTP Evolution</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-  <!-- Page Header -->
-  <header>
-    <h1>HTTP Evolution</h1>
-  </header>
+    <!-- =====================================================
+         Page Header
+    ====================================================== -->
+    <header>
+        <h1>HTTP Evolution</h1>
+    </header>
 
-  <!-- Navigation Menu -->
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="http-basics.html">HTTP Basics</a></li>
-      <li><a href="http-evolution.html">HTTP Evolution</a></li>
-      <li><a href="key-concepts.html">Key Concepts</a></li>
-      <li><a href="references.html">References</a></li>
-      <li><a href="quiz.html">Quiz</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-  </nav>
+    <!-- =====================================================
+         Navigation Menu
+    ====================================================== -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="http-basics.html">HTTP Basics</a></li>
+            <li><a href="http-evolution.html">HTTP Evolution</a></li>
+            <li><a href="key-concepts.html">Key Concepts</a></li>
+            <li><a href="references.html">References</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
 
-  <!-- Main Content -->
-  <main>
-    <section>
-      <h2>HTTP/0.9</h2>
-      <p>HTTP/0.9 was the first version. It only supported the GET method and returned simple HTML pages.</p>
-    </section>
+    <!-- =====================================================
+         Main Content
+    ====================================================== -->
+    <main>
 
-    <section>
-      <h2>HTTP/1.0</h2>
-      <p>HTTP/1.0 added status codes and headers. It allowed more methods but closed the connection after each request.</p>
-    </section>
+        <!-- HTTP/0.9 -->
+        <section>
 
-    <section>
-      <h2>HTTP/1.1</h2>
-      <p>HTTP/1.1 improved speed with persistent connections, better caching, and required host headers.</p>
-    </section>
+            <h2>HTTP/0.9</h2>
 
-    <section>
-      <h2>HTTP/2</h2>
-      <p>HTTP/2 uses multiplexing, header compression, and binary framing to improve performance.</p>
-    </section>
+            <p>
+                HTTP/0.9 was the first version of HTTP.
+                It only supported the GET method and
+                returned simple HTML pages.
+            </p>
 
-    <section>
-      <h2>HTTP/3 and QUIC</h2>
-      <p>HTTP/3 uses QUIC instead of TCP, reducing delays and improving reliability on modern networks.</p>
-    </section>
-  </main>
+        </section>
 
-  <!-- Footer -->
-  <footer id="main-footer">
-    <p>This is a class project for IT 3203.</p>
-    <p><a href="https://ksuweb.github.io/IT3203/" target="_blank">IT 3203 Class Website</a></p>
-  </footer>
+        <!-- HTTP/1.0 -->
+        <section>
+
+            <h2>HTTP/1.0</h2>
+
+            <p>
+                HTTP/1.0 added important features such as
+                headers and status codes. It supported
+                additional methods but closed the connection
+                after each request and response.
+            </p>
+
+        </section>
+
+        <!-- HTTP/1.1 -->
+        <section>
+
+            <h2>HTTP/1.1</h2>
+
+            <p>
+                HTTP/1.1 improved efficiency by introducing
+                persistent connections, better caching,
+                chunked transfer encoding, and mandatory
+                host headers.
+            </p>
+
+        </section>
+
+        <!-- HTTP/2 -->
+        <section>
+
+            <h2>HTTP/2</h2>
+
+            <p>
+                HTTP/2 introduced multiplexing, header
+                compression, and binary framing. These
+                improvements reduced latency and improved
+                performance on modern websites.
+            </p>
+
+        </section>
+
+        <!-- HTTP/3 -->
+        <section>
+
+            <h2>HTTP/3 and QUIC</h2>
+
+            <p>
+                HTTP/3 uses the QUIC protocol instead of TCP.
+                This reduces connection delays, improves
+                reliability, and provides faster page loading
+                on modern networks.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- =====================================================
+         Footer
+    ====================================================== -->
+    <footer id="main-footer">
+
+        <p>
+            This is a class project for IT 3203.
+        </p>
+
+        <p>
+            <a href="https://ksuweb.github.io/IT3203/"
+               target="_blank"
+               rel="noopener noreferrer">
+                IT 3203 Class Website
+            </a>
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
