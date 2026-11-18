@@ -37,7 +37,6 @@
 
     <!-- =====================================================
          Navigation Menu
-         Consistent across all website pages
     ====================================================== -->
     <nav aria-label="Main navigation">
 
@@ -58,7 +57,6 @@
     ====================================================== -->
     <main>
 
-        <!-- Quiz Instructions -->
         <section>
 
             <h2>Instructions</h2>
@@ -85,20 +83,13 @@
 
         </section>
 
-        <!-- =====================================================
-             Quiz Form
-        ====================================================== -->
-
         <form id="http-quiz">
 
             <!-- Question 1 -->
             <fieldset class="question-card">
+                <legend>Question 1 — Fill in the Blank (1 point)</legend>
 
-                <legend>Question 1 — Fill in the blank (1 point)</legend>
-
-                <p>
-                    HTTP stands for Hypertext ____ Protocol.
-                </p>
+                <p>HTTP stands for Hypertext ____ Protocol.</p>
 
                 <label for="q1" class="visually-hidden">
                     Answer to Question 1
@@ -109,13 +100,11 @@
                     id="q1"
                     name="q1"
                     autocomplete="off">
-
             </fieldset>
 
             <!-- Question 2 -->
             <fieldset class="question-card">
-
-                <legend>Question 2 — Fill in the blank (1 point)</legend>
+                <legend>Question 2 — Fill in the Blank (1 point)</legend>
 
                 <p>
                     HTTPS adds encryption to help protect communication
@@ -131,17 +120,13 @@
                     id="q2"
                     name="q2"
                     autocomplete="off">
-
             </fieldset>
 
             <!-- Question 3 -->
             <fieldset class="question-card">
-
                 <legend>Question 3 — Multiple Choice (1 point)</legend>
 
-                <p>
-                    What is the main purpose of HTTP?
-                </p>
+                <p>What is the main purpose of HTTP?</p>
 
                 <label>
                     <input type="radio" name="q3" value="a">
@@ -162,12 +147,10 @@
                     <input type="radio" name="q3" value="d">
                     To create database tables
                 </label>
-
             </fieldset>
 
             <!-- Question 4 -->
             <fieldset class="question-card">
-
                 <legend>Question 4 — Multiple Choice (1 point)</legend>
 
                 <p>
@@ -193,12 +176,10 @@
                     <input type="radio" name="q4" value="d">
                     The CSS file
                 </label>
-
             </fieldset>
 
             <!-- Question 5 -->
             <fieldset class="question-card">
-
                 <legend>Question 5 — Multiple Choice (1 point)</legend>
 
                 <p>
@@ -224,14 +205,124 @@
                     <input type="radio" name="q5" value="d">
                     The connection is encrypted
                 </label>
-
             </fieldset>
 
-            <!-- Questions 6-10 -->
-            <!-- Keeping your existing question structure unchanged -->
+            <!-- Question 6 -->
+            <fieldset class="question-card">
+                <legend>Question 6 — Select All That Apply (1 point)</legend>
+
+                <p>
+                    Which of these are HTTP request methods?
+                </p>
+
+                <label>
+                    <input type="checkbox" name="q6" value="get">
+                    GET
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q6" value="post">
+                    POST
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q6" value="css">
+                    CSS
+                </label>
+
+                <label>
+                    <input type="checkbox" name="q6" value="delete">
+                    DELETE
+                </label>
+            </fieldset>
+
+            <!-- Question 7 -->
+            <fieldset class="question-card">
+                <legend>Question 7 — True or False (1 point)</legend>
+
+                <p>
+                    HTTP headers can carry additional information about a request or response.
+                </p>
+
+                <label>
+                    <input type="radio" name="q7" value="true">
+                    True
+                </label>
+
+                <label>
+                    <input type="radio" name="q7" value="false">
+                    False
+                </label>
+            </fieldset>
+
+            <!-- Question 8 -->
+            <fieldset class="question-card">
+                <legend>Question 8 — True or False (1 point)</legend>
+
+                <p>
+                    HTTP/2 introduced features such as multiplexing and binary framing.
+                </p>
+
+                <label>
+                    <input type="radio" name="q8" value="true">
+                    True
+                </label>
+
+                <label>
+                    <input type="radio" name="q8" value="false">
+                    False
+                </label>
+            </fieldset>
+
+            <!-- Question 9 -->
+            <fieldset class="question-card">
+                <legend>Question 9 — Multiple Choice (1 point)</legend>
+
+                <p>
+                    What is one common purpose of HTTP caching?
+                </p>
+
+                <label>
+                    <input type="radio" name="q9" value="a">
+                    To keep a copy of a resource so it may be reused and loaded faster
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="b">
+                    To turn HTML into JavaScript
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="c">
+                    To remove all status codes
+                </label>
+
+                <label>
+                    <input type="radio" name="q9" value="d">
+                    To replace the web server
+                </label>
+            </fieldset>
+
+            <!-- Question 10 -->
+            <fieldset class="question-card">
+                <legend>Question 10 — Fill in the Blank (1 point)</legend>
+
+                <p>
+                    HTTP/3 uses the QUIC transport protocol instead of ____.
+                </p>
+
+                <label for="q10" class="visually-hidden">
+                    Answer to Question 10
+                </label>
+
+                <input
+                    type="text"
+                    id="q10"
+                    name="q10"
+                    autocomplete="off">
+            </fieldset>
 
             <!-- Quiz Buttons -->
-
             <button
                 class="quiz-button"
                 id="submit-quiz"
@@ -252,10 +343,7 @@
 
         </form>
 
-        <!-- =====================================================
-             Quiz Results Area
-        ====================================================== -->
-
+        <!-- Quiz Results -->
         <section
             id="results"
             aria-live="polite"
@@ -266,9 +354,7 @@
             </h2>
 
             <p id="overall-result"></p>
-
             <p id="total-score"></p>
-
             <p id="time-spent"></p>
 
             <div id="answer-review"></div>
@@ -277,10 +363,7 @@
 
     </main>
 
-    <!-- =====================================================
-         Footer
-    ====================================================== -->
-
+    <!-- Footer -->
     <footer id="main-footer">
 
         <p>
@@ -291,9 +374,7 @@
             <a href="https://ksuweb.github.io/IT3203/"
                target="_blank"
                rel="noopener noreferrer">
-
                 IT 3203 Class Website
-
             </a>
         </p>
 
